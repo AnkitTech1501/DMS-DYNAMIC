@@ -1,0 +1,24 @@
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.dms-loading-bar-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 2000;
+  background: transparent;
+}
+
+.dms-loading-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1d4ed8, #60a5fa);
+  box-shadow: 0 0 8px rgba(29, 78, 216, 0.6);
+  transition: width 0.25s ease-out;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}

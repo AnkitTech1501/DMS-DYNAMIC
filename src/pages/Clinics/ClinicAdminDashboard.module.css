@@ -1,0 +1,389 @@
+.dashboard {
+  background: #f7f9fc;
+  min-height: calc(100vh - 70px);
+  margin: -24px;
+  padding: 28px;
+}
+
+/* ================= HEADER ================= */
+
+.pageHeader {
+  margin-bottom: 26px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.titleIcon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: #e9f7ef;
+  color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #172033;
+}
+
+.pageSubtitle {
+  margin: 3px 0 0;
+  color: #858ea0;
+  font-size: 14px;
+}
+
+/* ================= STAT CARDS ================= */
+
+.statCard {
+  background: #ffffff;
+  border: 0;
+  border-radius: 15px;
+  padding: 21px;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(25, 42, 70, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(25, 42, 70, 0.09);
+}
+
+.statContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.statIcon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.totalIcon {
+  background: #eef4ff;
+  color: #0d6efd;
+}
+
+.activeIcon {
+  background: #eaf8f0;
+  color: #198754;
+}
+
+.inactiveIcon {
+  background: #f1f2f4;
+  color: #6c757d;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #8a93a5;
+  margin-bottom: 2px;
+}
+
+.statNumber {
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #172033;
+}
+
+.activeNumber {
+  color: #198754;
+}
+
+.inactiveNumber {
+  color: #6c757d;
+}
+
+.statDescription {
+  color: #a0a7b5;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+/* ================= DOCTORS CARD ================= */
+
+.doctorsCard {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 22px rgba(25, 42, 70, 0.06);
+}
+
+/* ================= CARD HEADER ================= */
+
+.cardHeader {
+  padding: 20px 22px;
+  border-bottom: 1px solid #edf0f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.smallHeaderIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: #f0f8f4;
+  color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #20283a;
+  margin: 0;
+}
+
+.cardSubtitle {
+  margin: 3px 0 0;
+  color: #929aaa;
+  font-size: 12px;
+}
+
+.doctorCount {
+  background: #f4f6f8;
+  color: #687386;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================= DOCTOR LIST ================= */
+
+.doctorList {
+  padding: 0;
+}
+
+.doctorItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 22px;
+  border-bottom: 1px solid #f0f2f5;
+  transition: background 0.15s ease;
+}
+
+.doctorItem:last-child {
+  border-bottom: 0;
+}
+
+.doctorItem:hover {
+  background: #fafcfd;
+}
+
+.doctorInfo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: #e9f7ef;
+  color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.doctorName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #252d3d;
+}
+
+.specialization {
+  margin-top: 3px;
+  color: #8992a2;
+  font-size: 12px;
+}
+
+/* ================= STATUS ================= */
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.activeBadge {
+  background: #eaf8f0;
+  color: #198754;
+}
+
+.inactiveBadge {
+  background: #f0f1f3;
+  color: #6c757d;
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ================= FOOTER ================= */
+
+.cardFooter {
+  padding: 13px 22px;
+  background: #fafbfc;
+  border-top: 1px solid #edf0f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8992a2;
+  font-size: 12px;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.emptyState {
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.emptyIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #eef8f3;
+  color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.emptyTitle {
+  color: #252d3d;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.emptyText {
+  color: #929aaa;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ================= LOADING ================= */
+
+.loadingWrapper {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingText {
+  margin-top: 12px;
+  color: #8a93a5;
+  font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .dashboard {
+    margin: -15px;
+    padding: 18px;
+  }
+
+  .pageTitle {
+    font-size: 22px;
+  }
+
+  .pageSubtitle {
+    font-size: 13px;
+  }
+
+  .statDescription {
+    display: none;
+  }
+
+  .cardHeader {
+    padding: 17px;
+  }
+
+  .doctorItem {
+    padding: 15px 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .statCard {
+    padding: 17px;
+  }
+
+  .statIcon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+  }
+
+  .statNumber {
+    font-size: 23px;
+  }
+
+  .doctorItem {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .statusBadge {
+    padding: 5px 8px;
+  }
+
+  .cardSubtitle {
+    display: none;
+  }
+}
+
