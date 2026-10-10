@@ -1,0 +1,16 @@
+1) DMS 
+ROLE 
+
+admin 
+doctor 
+patient 
+
+
+
+
+1) Task 1 
+login banao admin ka 
+uske 3 role admin, doctor, patient 
+admin dctor ko manage karega
+admin sabse pahele clininc banayega us clinic mai yeh doctor assign hoga 
+phir admin doctor ka login banayega 
